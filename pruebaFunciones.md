@@ -45,18 +45,28 @@ tipicaFuncion(dospar = 6, unpar = 3)
 ## Ejercicio 3 del examen
 
 def myDiv(id:str, *clas:str, content:str)->str:
-
     resultado = " "
     resultado += '<div id="' + id + '" '
 
     if len(clas) != 0:
-        resultado += 'class = "'
+        resultado += 'class="'
 
         for x in clas:
-            resultado += e + ','
+            resultado += x + ', '
 
-        resultado += '"'
+        resultado += '\b\b"'
     
     resultado += '>' + content + '</div>'
     
     return resultado
+
+def main():
+
+    print(myDiv("midiv", "bt_h1", "row", "clear", content="Lorem ipsum"))
+
+
+
+## Ejercicio 5 del examen
+
+def myScript(*src:str)->str:
+Función que tiene como entrada un número indeterminado de cadena de caracteres y como salida una cadena de caracteres. Probablemente transforma las entradas en la salida.
