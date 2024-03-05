@@ -40,3 +40,23 @@ tipicaFuncion(dospar = 6, unpar = 3)
 #unpar = 3
 
 #dospar = 6
+
+
+## Ejercicio 3 del examen
+
+def myDiv(id:str, *clas:str, content:str)->str:
+
+    resultado = " "
+    resultado += '<div id="' + id + '" '
+
+    if len(clas) != 0:
+        resultado += 'class = "'
+
+        for x in clas:
+            resultado += e + ','
+
+        resultado += '"'
+    
+    resultado += '>' + content + '</div>'
+    
+    return resultado
