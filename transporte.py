@@ -3,7 +3,7 @@ class Transporte:
         self.ruedas = ruedas
         self.asientos = asientos
 
-    def desplazar(self, x: int, y: int) -> None:
+    def desplazar(self, x: int, y = 0) -> None:
         print(f"Desplazando a x= {x}; y= {y}.")
 
     def informacion(self):
